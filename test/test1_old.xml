@@ -1,0 +1,326 @@
+<ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://datex2.eu/schema/2/2_0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:Header/>
+    <ns0:Body>
+        <d2LogicalModel modelBaseVersion="2">
+            <ns1:exchange>
+                <ns1:supplierIdentification>
+                    <ns1:country>nl</ns1:country>
+                    <ns1:nationalIdentifier>NLNDW</ns1:nationalIdentifier>
+                </ns1:supplierIdentification>
+            </ns1:exchange>
+            <ns1:payloadPublication lang="nl" xsi:type="MeasuredDataPublication">
+                <ns1:publicationTime>2017-12-31T23:00:42.006Z</ns1:publicationTime>
+                <ns1:publicationCreator>
+                    <ns1:country>nl</ns1:country>
+                    <ns1:nationalIdentifier>NLNDW</ns1:nationalIdentifier>
+                </ns1:publicationCreator>
+                <ns1:measurementSiteTableReference id="NDW01_MT" targetClass="MeasurementSiteTable" version="972"/>
+                <ns1:headerInformation>
+                    <ns1:confidentiality>noRestriction</ns1:confidentiality>
+                    <ns1:informationStatus>real</ns1:informationStatus>
+                </ns1:headerInformation>
+                <ns1:siteMeasurements>
+                    <ns1:measurementSiteReference id="PZH01_MST_0690_00" targetClass="MeasurementSiteRecord"
+                                                  version="1"/>
+                    <ns1:measurementTimeDefault>2017-12-31T22:59:00Z</ns1:measurementTimeDefault>
+                    <ns1:measuredValue index="1">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>60</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="2">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="3">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="4">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>60</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="5">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="1">
+                                    <ns1:speed>59</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="6">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="7">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="8">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="1">
+                                    <ns1:speed>59</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="9">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="10">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="11">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="12">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="13">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="14">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="15">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="16">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                </ns1:siteMeasurements>
+
+                <ns1:siteMeasurements>
+                    <ns1:measurementSiteReference id="PZH02_MST_0690_00" targetClass="MeasurementSiteRecord"
+                                                  version="1"/>
+                    <ns1:measurementTimeDefault>2019-12-31T22:59:00Z</ns1:measurementTimeDefault>
+                    <ns1:measuredValue index="1">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>60</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="2">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="3">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="4">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>60</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="5">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="1">
+                                    <ns1:speed>59</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="6">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-111</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="7">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-111</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="8">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="1">
+                                    <ns1:speed>59</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="9">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="10">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="11">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="12">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficFlow">
+                                <ns1:vehicleFlow>
+                                    <ns1:vehicleFlowRate>0</ns1:vehicleFlowRate>
+                                </ns1:vehicleFlow>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="13">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-11</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="14">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>110</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="15">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>123</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                    <ns1:measuredValue index="16">
+                        <ns1:measuredValue>
+                            <ns1:basicData xsi:type="TrafficSpeed">
+                                <ns1:averageVehicleSpeed numberOfInputValuesUsed="0">
+                                    <ns1:speed>-1</ns1:speed>
+                                </ns1:averageVehicleSpeed>
+                            </ns1:basicData>
+                        </ns1:measuredValue>
+                    </ns1:measuredValue>
+                </ns1:siteMeasurements>
+
+            </ns1:payloadPublication>
+        </d2LogicalModel>
+    </ns0:Body>
+</ns0:Envelope>
