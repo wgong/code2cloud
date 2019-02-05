@@ -61,14 +61,19 @@ devopsgong@osboxes:~/GitHub/insight-project/src/dash
 $ python3 app.py
 Running on http://0.0.0.0:5000/
 
-Test case 1: upload schema - Traffic.yml
-devopsgong@osboxes:~/GitHub/insight-project/test$ aws s3 cp Traffic.yml s3://wengong/Traffic/test/Traffic.yml
+Test case #1: upload schema - Traffic.yml
+devopsgong@osboxes:~/GitHub/insight-project/test
+$ aws s3 cp Traffic.yml s3://wengong/Traffic/test/Traffic.yml
 
-Test case 2: upload data - Traffic.yml
-devopsgong@osboxes:~/GitHub/insight-project/test$ aws s3 cp sample_Trafficspeed.xml s3://wengong/Traffic/test/Trafficspeed.xml
+Test case #2: upload data - Traffic.yml
+devopsgong@osboxes:~/GitHub/insight-project/test
+$ aws s3 cp sample_Trafficspeed.xml s3://wengong/Traffic/test/Trafficspeed.xml
+
+$ aws s3 cp test1_old.xml s3://wengong/Traffic/test/Trafficspeed-0204_01.xml
+
 
 ## schema changed
-test case 3:
+test case #3:
 ~/GitHub/insight-project/test
 $ aws s3 cp test1_old.xml s3://wengong/Traffic/test/test1_old.xml
 
@@ -186,6 +191,7 @@ test case #14: revert
 
 
 
+
 ## install on devopsgong@osboxes (locally)
 devopsgong@osboxes:~$ python --version
 Python 3.6.5 :: Anaconda, Inc.
@@ -259,3 +265,4 @@ how to cache auth with git
 ```
 
 push from my own account
+
