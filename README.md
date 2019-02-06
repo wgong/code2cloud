@@ -1,11 +1,14 @@
 # Code-to-Cloud
-> ***Speed up innovation from code to cloud***
+> ***Speed up software innovation from code to cloud***
 
 This is a project I completed during the Insight DevOps program (New York, Jan 2019)
 
 ## Business Problem
 How to streamline software development process by leveraging DevOps tool such as Jenkins? 
-The goal is to help IT automate test > build > release process so that developer can focus on coding features. The benefits to business are faster time-to-market speed, productivity gain and cost savings.
+
+The goal is to help IT automate test > build > release process so that developer can focus on coding features. 
+
+The benefits to business are faster time-to-market speed, productivity gain and cost savings.
 
 DevOps CI/CD Pipeline
 ----------------------
@@ -99,19 +102,19 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 
 #### AWS Lambda
 config lambda function 			
-https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/preprocess_xml?tab=graph
+* https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/preprocess_xml?tab=graph
 	
 #### AWS CloudWatch
 view Lambda log	
-https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/preprocess_xml;streamFilter=typeLogStreamPrefix
+* https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/preprocess_xml;streamFilter=typeLogStreamPrefix
 
 #### AWS S3
 monitor file upload
-https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
+* https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
 	
 #### AWS DynamoDB
 monitor processed traffic data
-https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=TrafficSpeed;tab=items
+* https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=TrafficSpeed;tab=items
 	
 #### AWS IAM
 grant resource permission
@@ -123,7 +126,10 @@ monitor processing and view logs
 use [dashboard](dash.s8s.cloud) to monitor traffic data processing
 
 #### Hello Docker
-see deployed app at http://hello.s8s.cloud or http://hello2.s8s.cloud 
+see deployed app 
+* http://hello.s8s.cloud 
+* http://hello2.s8s.cloud 
+
 (ToDo : run load balanced or reverse proxy)
 
 ### Test
