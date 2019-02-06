@@ -1,14 +1,14 @@
 # Code-to-Cloud
 > ***Speed up software innovation from code to cloud***
 
-This is a project I completed during the Insight DevOps program (New York, Jan 2019)
+This project was completed during the Insight DevOps program (New York, Jan 2019)
 
 ## Business Problem
-How to streamline software development process by leveraging DevOps tool such as Jenkins? 
+How to streamline software development process by leveraging DevOps best practice and tools such as Jenkins, CI/CD? 
 
-The goal is to help IT automate test > build > release process so that developer can focus on coding features. 
+Our goal is to help IT automate test > build > deliver > deploy processes so that developer can focus on coding features. 
 
-The benefits to business are faster time-to-market speed, productivity gain and cost savings.
+Business benefits include faster time-to-market speed, productivity gain and cost savings.
 
 DevOps CI/CD Pipeline
 ----------------------
@@ -18,7 +18,7 @@ DevOps CI/CD Pipeline
 
 ### Overview
 
-I took an existing project by Insight Data Engineering fellow:
+I built upon an existing Insight project by a Data Engineering fellow:
 * created integration test
 * built Jenkins pipeline 
 	- trigger on Git push
@@ -28,7 +28,7 @@ I took an existing project by Insight Data Engineering fellow:
 	- publish to container registry
 	- deploy app to cloud.
 
-The Data Engineering project is an AWS Lambda app which processes IoT [traffic](https://github.com/arsegorov/insight-project) sensor data, its details can be found here (https://github.com/arsegorov/insight-project)
+The Data Engineering project is an AWS Lambda app which processes IoT [traffic](https://github.com/arsegorov/insight-project) sensor data.
 
 ### Environment setup 
 ```
@@ -97,19 +97,19 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 #### Jenkins
 * use [Jenkins admin console](http://jenkins.s8s.cloud) to create/configure build pipeline
 
-* monitor build job when git push
+* monitor build jobs after git push
 
 
 #### AWS Lambda
-config lambda function 			
+config lambda functions 			
 * https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/preprocess_xml?tab=graph
 	
 #### AWS CloudWatch
-view Lambda log	
+view Lambda logs	
 * https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/preprocess_xml;streamFilter=typeLogStreamPrefix
 
 #### AWS S3
-monitor file upload
+monitor file uploads
 * https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
 	
 #### AWS DynamoDB
@@ -117,10 +117,10 @@ monitor processed traffic data
 * https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=TrafficSpeed;tab=items
 	
 #### AWS IAM
-grant resource permission
+manage resource permissions
 
 #### SQL Workbench
-monitor processing and view logs
+monitor data processing and view logs
 
 #### Dash
 use [dashboard](dash.s8s.cloud) to monitor traffic data processing
@@ -130,9 +130,11 @@ see deployed app
 * http://hello.s8s.cloud 
 * http://hello2.s8s.cloud 
 
-(ToDo : run load balanced or reverse proxy)
+(ToDo : run load balanced or reverse proxy to have a single URL)
 
 ### Test
+
+Below are 3 test scenarios. One can run them manually to verify project setup and/or further development.
 
 #### Unit test
 
@@ -150,6 +152,16 @@ run a batch test
 	$ cd src
 	$ ./retrieve-realtime-data.sh
 ```
+#### Integration/Regression test
+
+
+```
+	cd src/lambda_xml
+	source ~/py36/bin/activate
+	pytest -q test_lambda_function_xml.py
+
+```
+
 
 ### References
 
