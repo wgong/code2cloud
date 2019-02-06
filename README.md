@@ -153,6 +153,9 @@ run a batch test
 
 ### References
 
+* [Use Jenkins](https://jenkins.io/doc/)
+* [Get started with AWS CD](https://docs.aws.amazon.com/AWSGettingStartedContinuousDeliveryPipeline/latest/GettingStarted/ECS_CD_Pipeline.html)
+
 
 ### About Me
 https://www.linkedin.com/in/wen-gong-a890681/
