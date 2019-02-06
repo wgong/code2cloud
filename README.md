@@ -4,7 +4,8 @@
 This is a project I completed during the Insight DevOps program (New York, Jan 2019)
 
 ## Business Problem
-How to streamline software development process by leveraging DevOps tool such as Jenkins? The goal is to help developer automate test > build > release process so that developer can focus on coding features. The benefits to business are faster time-to-market speed, productivity gain and cost savings.
+How to streamline software development process by leveraging DevOps tool such as Jenkins? 
+The goal is to help IT automate test > build > release process so that developer can focus on coding features. The benefits to business are faster time-to-market speed, productivity gain and cost savings.
 
 DevOps CI/CD Pipeline
 ----------------------
@@ -17,12 +18,12 @@ DevOps CI/CD Pipeline
 I took an existing project by Insight Data Engineering fellow:
 * created integration test
 * built Jenkins pipeline 
-	1. trigger on Git push
-	2. run test
-	3. alert by email when test fails
-	4. build docker image
-	5. publish to container registry
-	6. deploy app to cloud.
+	- trigger on Git push
+	- run test
+	- alert by email when test fails
+	- build docker image
+	- publish to container registry
+	- deploy app to cloud.
 
 The Data Engineering project is an AWS Lambda app which processes IoT [traffic](https://github.com/arsegorov/insight-project) sensor data, its details can be found here (https://github.com/arsegorov/insight-project)
 
@@ -96,19 +97,27 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 * monitor build job when git push
 
 
-#### AWS Lambda: config lambda function 			https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/preprocess_xml?tab=graph
+#### AWS Lambda
+config lambda function 			
+https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/preprocess_xml?tab=graph
 	
-#### AWS CloudWatch: view Lambda log	https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/preprocess_xml;streamFilter=typeLogStreamPrefix
+#### AWS CloudWatch
+view Lambda log	
+https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/lambda/preprocess_xml;streamFilter=typeLogStreamPrefix
 
-#### AWS S3: monitor file upload
-	https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
+#### AWS S3
+monitor file upload
+https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
 	
-#### AWS DynamoDB : monitor processed traffic data
+#### AWS DynamoDB
+monitor processed traffic data
 https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=TrafficSpeed;tab=items
 	
-#### AWS IAM: grant resource permission
+#### AWS IAM
+grant resource permission
 
-#### SQL Workbench: monitor log
+#### SQL Workbench
+monitor processing and view logs
 
 #### Dash
 use [dashboard](dash.s8s.cloud) to monitor traffic data processing
