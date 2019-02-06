@@ -1,4 +1,4 @@
-# Code2Cloud
+# Code-to-Cloud
 > ***Speed up innovation from code to cloud***
 
 This is a project I completed during the Insight DevOps program (New York, Jan 2019)
