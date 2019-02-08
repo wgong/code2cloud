@@ -128,9 +128,7 @@ use [dashboard](dash.s8s.cloud) to monitor traffic data processing
 #### Hello Docker
 see deployed app 
 * http://hello.s8s.cloud 
-* http://hello2.s8s.cloud 
 
-(ToDo : run load balanced or reverse proxy to have a single URL)
 
 ### Test
 
