@@ -32,64 +32,64 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 
 ### Environment setup 
 ```
-	install Jenkins on AWS
+install Jenkins on AWS
 
-	python
-		requirements.txt
+python
+	requirements.txt
 
-	AWS
-		CLI
-		S3
-			create bucket
-			
-		RDS - PostgreSQL
-			create database
-
-		Lambda
-			in AWS console, create Lambda function
-			
-			run ./upload-lambda-xml.sh
-			
-			Lambda settings:
-				Timeout=15 mins (max)
-				Memory = 3GB
+AWS configuration
+	CLI
+	S3
+		create bucket
 		
-	set env vars
-		add following export to .bashrc
-			export AWS_S3_BUCKET=<your-S3-bucket-name>
-			export AWS_PG_DB_HOST=<your-RDS-postgres-DB-hostname>
-			export AWS_PG_DB_PORT=<your-RDS-postgres-DB-port>
-			export AWS_PG_DB_NAME=traffic_db
-			export AWS_PG_DB_USER=<db-user-name>
-			export AWS_PG_DB_PASS=<db-user-password>
+	RDS - PostgreSQL
+		create database
+
+	Lambda
+		in AWS console, create Lambda function
+		
+		run ./upload-lambda-xml.sh
+		
+		Lambda settings:
+			Timeout=15 mins (max)
+			Memory = 3GB
 	
-	create tables
-		setup/create_tables_dynamoDB.py  
-		setup/create_tables_postgreSQL.py
-		
-	install python 3.6 on Jenkins instance
+set env vars
+	add following export to .bashrc
+		export AWS_S3_BUCKET=<your-S3-bucket-name>
+		export AWS_PG_DB_HOST=<your-RDS-postgres-DB-hostname>
+		export AWS_PG_DB_PORT=<your-RDS-postgres-DB-port>
+		export AWS_PG_DB_NAME=traffic_db
+		export AWS_PG_DB_USER=<db-user-name>
+		export AWS_PG_DB_PASS=<db-user-password>
+
+create tables
+	setup/create_tables_dynamoDB.py  
+	setup/create_tables_postgreSQL.py
+	
+install python 3.6 on Jenkins instance
 ```
 
 ### Development
 ```
-	wrote scripts to create tables:
-		setup/create_tables_dynamoDB.py
-		setup/create_tables_postgreSQL.py
-		
-	added new function extract_traffic_data so it is more robust to schema changes
-		src/lambda_xml/lambda_function_xml.py
+wrote scripts to create tables:
+	setup/create_tables_dynamoDB.py
+	setup/create_tables_postgreSQL.py
 	
-	added 3 functions: log_msg, log_txn to simplify logging
-		src/lambda_xml/logs.py
-	
-	created pyTest case for end-to-end integration test
-		src/lambda_xml/test_lambda_function_xml.py
+added new function extract_traffic_data so it is more robust to schema changes
+	src/lambda_xml/lambda_function_xml.py
 
-	Jenkins pipeline
-		Jenkinsfile
-		
-	Build script
-		build-docker-deploy.sh
+added 3 functions: log_msg, log_txn to simplify logging
+	src/lambda_xml/logs.py
+
+created pyTest case for end-to-end integration test
+	src/lambda_xml/test_lambda_function_xml.py
+
+Jenkins pipeline
+	Jenkinsfile
+	
+Build script
+	build-docker-deploy.sh
 ```
 
 ### Operation
