@@ -32,7 +32,7 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 
 ### Environment setup 
 ```
-	Jenkins on AWS
+	install Jenkins on AWS
 
 	python
 		requirements.txt
@@ -54,7 +54,7 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 				Timeout=15 mins (max)
 				Memory = 3GB
 		
-	env vars
+	set env vars
 		add following export to .bashrc
 			export AWS_S3_BUCKET=<your-S3-bucket-name>
 			export AWS_PG_DB_HOST=<your-RDS-postgres-DB-hostname>
@@ -63,11 +63,11 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 			export AWS_PG_DB_USER=<db-user-name>
 			export AWS_PG_DB_PASS=<db-user-password>
 	
-	tables
+	create tables
 		setup/create_tables_dynamoDB.py  
 		setup/create_tables_postgreSQL.py
 		
-	python 3.6 on Jenkins instance
+	install python 3.6 on Jenkins instance
 ```
 
 ### Development
@@ -76,7 +76,7 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 		setup/create_tables_dynamoDB.py
 		setup/create_tables_postgreSQL.py
 		
-	added new function extract_traffic_data() so it is more robust to schema changes
+	added new function extract_traffic_data so it is more robust to schema changes
 		src/lambda_xml/lambda_function_xml.py
 	
 	added 3 functions: log_msg, log_txn to simplify logging
@@ -141,7 +141,8 @@ Below are 3 test scenarios. One can run them manually to verify project setup an
 upload a single file
 
 ```
-$ aws s3 cp sample_Trafficspeed.xml s3://wengong/Traffic/test/Trafficspeed.xml
+$ cd test
+$ aws s3 cp sample_Trafficspeed.xml.gz s3://wengong/Traffic/test/Trafficspeed.xml.gz
 ```
 
 #### Batch test
@@ -149,16 +150,16 @@ $ aws s3 cp sample_Trafficspeed.xml s3://wengong/Traffic/test/Trafficspeed.xml
 run a batch test
 
 ```
-	$ cd src
-	$ ./retrieve-realtime-data.sh
+$ cd src
+$ ./retrieve-realtime-data.sh
 ```
 #### Integration/Regression test
 
 
 ```
-	cd src/lambda_xml
-	source ~/py36/bin/activate
-	pytest -q test_lambda_function_xml.py
+$ cd src/lambda_xml
+$ source ~/py36/bin/activate
+$ pytest -q test_lambda_function_xml.py
 
 ```
 
