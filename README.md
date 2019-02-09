@@ -125,6 +125,23 @@ monitor data processing and view logs
 #### Dash
 use [dashboard](dash.s8s.cloud) to monitor traffic data processing
 
+#### AWS Load Balancer
+* https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName
+
+ELB Type: network
+
+Target group: 
+	ecs-cluster-target-group
+Targets: 
+* http://ec2-18-234-37-93.compute-1.amazonaws.com   (inst1)
+* http://ec2-35-172-234-244.compute-1.amazonaws.com (inst2)
+
+#### NameCheap.com
+DNS Admin: REDIRECT DOMAIN
+* hello.s8s.cloud => http://ecs-cluster-ad4b30d1387b520b.elb.us-east-1.amazonaws.com/
+* jenkins.s8s.cloud => http://ec2-52-3-227-246.compute-1.amazonaws.com:8080/
+
+
 #### Hello Docker
 see deployed app 
 * http://hello.s8s.cloud 
@@ -197,12 +214,6 @@ view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/hell
 view docker cloud homepage at http://hello.s8s.cloud/
 
 ```
-
-
-### References
-
-* [Use Jenkins](https://jenkins.io/doc/)
-* [Get started with AWS CD](https://docs.aws.amazon.com/AWSGettingStartedContinuousDeliveryPipeline/latest/GettingStarted/ECS_CD_Pipeline.html)
 
 
 ### References

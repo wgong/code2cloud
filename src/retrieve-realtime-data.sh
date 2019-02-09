@@ -50,10 +50,10 @@ old_minute=
 while [[ "${d}" < "${insight_end_date}" ]]
 do
 
-    if [ $num_loop -gt $max_loop ]
-    then
-      break
-    fi
+    # if [ $num_loop -gt $max_loop ]
+    # then
+    #   break
+    # fi
 
     # current minute and second
     minute=$(date +%M)
@@ -71,7 +71,7 @@ do
         echo "${d} ${t}"
 
         # retrieving the real-time-data file
-        wget -O ${tmpfile} http://opendata.ndw.nu/trafficspeed.xml.gz
+        wget -q -O ${tmpfile} http://opendata.ndw.nu/trafficspeed.xml.gz
 
         # local test
         # cp ${tmpfile} ${d}_${t}_Trafficspeed.gz

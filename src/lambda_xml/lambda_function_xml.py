@@ -195,16 +195,16 @@ def main(event, context):
 
         data = extract_traffic_data(xml_data, NS_PREFIX)
 
-        print("DEBUG:\n",data[0])
+        # print("DEBUG:\n",data[0])
 
         size = len(data)
         log_msg(f'Writing {size} locations to DynamoDB', connection, object_key, processing)
 
         # Break the batch into reasonably sized chunks
-        chunk_size = 300
+        chunk_size = 200
         for i in range(0, size, chunk_size):
             # processing only subset when debugging
-            if FLAG_DEBUG  and i > 5*chunk_size :  
+            if FLAG_DEBUG and i > 2*chunk_size :  
                 break
 
             j = min(size, i + chunk_size)
