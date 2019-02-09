@@ -26,7 +26,7 @@ pipeline {
                     which pytest
                     echo "run pytest"
                     cd src/lambda_xml
-                    pytest -q test_lambda_function_xml.py
+                    # pytest -q test_lambda_function_xml.py
                 '''
             }
         }
@@ -35,8 +35,10 @@ pipeline {
                 sh 'echo "Build Docker image and Deploy"'
                 sh '''
                     which docker
-	            docker --version
-                    #./build-docker-deploy.sh
+                    $(aws ecr get-login --no-include-email --region us-east-1)
+                    docker build -t code2cloud .
+                    docker tag code2cloud:latest 629309645488.dkr.ecr.us-east-1.amazonaws.com/code2cloud:latest
+                    docker push 629309645488.dkr.ecr.us-east-1.amazonaws.com/code2cloud:latest
                 '''
             }
         }
