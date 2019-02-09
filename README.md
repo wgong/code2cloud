@@ -132,6 +132,7 @@ ELB Type: network
 
 Target group: 
 	ecs-cluster-target-group
+	
 Targets: 
 * http://ec2-18-234-37-93.compute-1.amazonaws.com   (inst1)
 * http://ec2-35-172-234-244.compute-1.amazonaws.com (inst2)
@@ -223,4 +224,4 @@ view docker cloud homepage at http://hello.s8s.cloud/
 
 
 ### About Me
-https://www.linkedin.com/in/wen-gong-a890681/
+https://www.linkedin.com/in/wen-g-gong/
