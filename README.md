@@ -125,6 +125,10 @@ monitor data processing and view logs
 #### Dash
 use [dashboard](dash.s8s.cloud) to monitor traffic data processing
 
+#### AWS ECR
+* https://console.aws.amazon.com/ecr/repositories/code2cloud/?region=us-east-1
+
+
 #### AWS Load Balancer
 * https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName
 
