@@ -176,10 +176,16 @@ def init_date(n):
 # Database connection
 ######################
 
-db_host = os.environ.get('AWS_PG_DB_HOST')
-db_name = os.environ.get('AWS_PG_DB_NAME')
-db_user = os.environ.get('AWS_PG_DB_USER')
-password = os.environ.get('AWS_PG_DB_PASS')
+if os.environ.get('AWS_DEPLOY_ENV') == 'dev':
+    db_host = os.environ.get('AWS_PG_DB_HOST')
+    db_name = os.environ.get('AWS_PG_DB_NAME')
+    db_user = os.environ.get('AWS_PG_DB_USER')
+    password = os.environ.get('AWS_PG_DB_PASS')
+else:
+    # get from Vault
+    print("ERROR: Vault not setup for secrets")
+    pass
+
 
 db_connection_string = f"dbname='{db_name}' " + \
     f"user='{db_user}' " + \
