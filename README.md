@@ -90,6 +90,56 @@ Docker build and publish
 	
 ```
 
+### How to run 
+
+#### Continuous Integration (CI) pipeline
+
+```
+login to devopsgong@osboxes:
+$ cd ~/GitHub/insight-project
+
+$ vi README.md   # change anything
+
+$ git status
+$ git add .; git commit -m "demo CI"; git push
+
+view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/insight-project/activity
+
+```
+
+#### Continuous Delivery (CD) pipeline
+
+```
+
+login to devopsgong@osboxes:
+$ cd ~/GitHub/hello-aws-docker
+
+$ vi www/index.php   # change company name
+
+$ git status
+$ git add .; git commit -m "demo CD"; git push
+
+view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/hello-aws-docker-git/activity
+
+view docker cloud homepage at http://hello.s8s.cloud/
+
+```
+
+#### Data Engineering (traffic-data) pipeline
+
+make sure python3.6 is installed
+```
+$ git clone https://github.com/wgong/insight-project.git
+$ cd insight-project
+$ pip3 install -r requirements.txt
+
+# retrieve traffic data
+$ ./src/retrieve-realtime-data.sh &
+
+# run dash
+$ python3 src/data/app.py
+```
+
 ### Operation
 
 #### Jenkins
@@ -181,55 +231,7 @@ $ pytest -q test_lambda_function_xml.py
 
 ```
 
-### Demo 
 
-#### Continuous Integration (CI)
-
-```
-login to devopsgong@osboxes:
-$ cd ~/GitHub/insight-project
-
-$ vi README.md   # change anything
-
-$ git status
-$ git add .; git commit -m "demo CI"; git push
-
-view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/insight-project/activity
-
-```
-
-#### Continuous Delivery (CD)
-
-```
-
-login to devopsgong@osboxes:
-$ cd ~/GitHub/hello-aws-docker
-
-$ vi www/index.php   # change company name
-
-$ git status
-$ git add .; git commit -m "demo CD"; git push
-
-view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/hello-aws-docker-git/activity
-
-view docker cloud homepage at http://hello.s8s.cloud/
-
-```
-
-#### Data Engineering (traffic data)
-
-make sure python3.6 is installed
-```
-$ git clone https://github.com/wgong/insight-project.git
-$ cd insight-project
-$ pip3 install -r requirements.txt
-
-# retrieve traffic data
-$ ./src/retrieve-realtime-data.sh &
-
-# run dash
-$ python3 src/data/app.py
-```
 
 
 ### References
