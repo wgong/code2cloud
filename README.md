@@ -34,8 +34,11 @@ The Data Engineering project is an AWS Lambda app which processes IoT [traffic](
 ```
 install Jenkins on AWS
 
-python
-	requirements.txt
+install python 3.6 on Jenkins instance
+        pip install virtualenv
+        virtualenv -p /usr/local/bin/python3 py36 
+        source py36/bin/activate
+        pip3 install -r requirements.txt
 
 AWS configuration
 	CLI
@@ -55,31 +58,25 @@ AWS configuration
 			Memory = 3GB
 	
 set env vars
-	add following export to .bashrc
-		export AWS_S3_BUCKET=<your-S3-bucket-name>
-		export AWS_PG_DB_HOST=<your-RDS-postgres-DB-hostname>
-		export AWS_PG_DB_PORT=<your-RDS-postgres-DB-port>
-		export AWS_PG_DB_NAME=traffic_db
-		export AWS_PG_DB_USER=<db-user-name>
-		export AWS_PG_DB_PASS=<db-user-password>
+	# after filling in S3 bucket name and database secrets in setu/aws_env_vars.sh
+        source scripts/aws_env_vars.sh
 
 create tables
-	setup/create_tables_dynamoDB.py  
-	setup/create_tables_postgreSQL.py
+	python3 scripts/create_tables_dynamoDB.py  
+	python3 scripts/create_tables_postgreSQL.py
 	
-install python 3.6 on Jenkins instance
 ```
 
 ### Development
 ```
 wrote scripts to create tables:
-	setup/create_tables_dynamoDB.py
-	setup/create_tables_postgreSQL.py
+	scripts/create_tables_dynamoDB.py
+	scripts/create_tables_postgreSQL.py
 	
 added new function extract_traffic_data so it is more robust to schema changes
 	src/lambda_xml/lambda_function_xml.py
 
-added 3 functions: log_msg, log_txn to simplify logging
+added 3 functions: log_msg, log_txn, new_txn to simplify logging
 	src/lambda_xml/logs.py
 
 created pyTest case for end-to-end integration test
@@ -87,9 +84,10 @@ created pyTest case for end-to-end integration test
 
 Jenkins pipeline
 	Jenkinsfile
+
+Docker build and publish
+        Dockerfile
 	
-Build script
-	build-docker-deploy.sh
 ```
 
 ### Operation
@@ -194,11 +192,9 @@ $ cd ~/GitHub/insight-project
 $ vi README.md   # change anything
 
 $ git status
-$ git add .; git commit -m "update index.php"; git push
+$ git add .; git commit -m "demo CI"; git push
 
 view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/insight-project/activity
-
-view docker cloud homepage at http://hello.s8s.cloud/
 
 ```
 
@@ -212,12 +208,27 @@ $ cd ~/GitHub/hello-aws-docker
 $ vi www/index.php   # change company name
 
 $ git status
-$ git add .; git commit -m "update index.php"; git push
+$ git add .; git commit -m "demo CD"; git push
 
 view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/hello-aws-docker-git/activity
 
 view docker cloud homepage at http://hello.s8s.cloud/
 
+```
+
+#### Data Engineering (traffic data)
+
+make sure python3.6 is installed
+```
+$ git clone https://github.com/wgong/insight-project.git
+$ cd insight-project
+$ pip3 install -r requirements.txt
+
+# retrieve traffic data
+$ ./src/retrieve-realtime-data.sh &
+
+# run dash
+$ python3 src/data/app.py
 ```
 
 
