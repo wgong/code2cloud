@@ -94,6 +94,8 @@ Docker build and publish
 
 #### Continuous Integration (CI) pipeline
 
+video walkthrough from git push to docker push (https://youtu.be/rKY6u4Z6AzM)
+
 ```
 login to devopsgong@osboxes:
 $ cd ~/GitHub/insight-project
@@ -108,6 +110,8 @@ view Jenkins job log at http://jenkins.s8s.cloud/blue/organizations/jenkins/insi
 ```
 
 #### Continuous Delivery (CD) pipeline
+
+video walkthrough from git push to service deployed in AWS (https://youtu.be/dxnUyEwXZhw)
 
 ```
 
@@ -127,7 +131,8 @@ view docker cloud homepage at http://hello.s8s.cloud/
 
 #### Data Engineering (traffic-data) pipeline
 
-make sure python3.6 is installed
+video walkthrough (https://youtu.be/qpPLTKGVnkc)
+
 ```
 $ git clone https://github.com/wgong/insight-project.git
 $ cd insight-project
