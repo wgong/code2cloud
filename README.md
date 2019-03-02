@@ -1,12 +1,12 @@
 # Code-to-Cloud
-> ***Speed up software innovation from code to cloud***
+> ***Streamline software innovation from code to cloud***
 
 This project was completed during the Insight DevOps program (New York, Jan 2019)
 
 ## Business Problem
 How to streamline software development process by leveraging DevOps best practice and tools such as Jenkins, CI/CD? 
 
-Our goal is to help IT automate test > build > deliver > deploy processes so that developer can focus on coding features. 
+Our goal is to automate test > build > deliver > deploy processes so that developer can focus on coding features. 
 
 Business benefits include faster time-to-market speed, productivity gain and cost savings.
 
@@ -19,8 +19,8 @@ DevOps CI/CD Pipeline
 ### Overview
 
 I built upon an existing Insight project by a Data Engineering fellow:
-* created integration test
-* built Jenkins pipeline 
+* created E2E integration test
+* built Jenkins CI/CD pipelines 
 	- trigger on Git push
 	- run test
 	- alert by email when test fails
@@ -45,6 +45,7 @@ AWS configuration
 	S3
 		create bucket
 		
+        DynamoDB
 	RDS - PostgreSQL
 		create database
 
