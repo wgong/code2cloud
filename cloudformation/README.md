@@ -79,6 +79,9 @@ apigateway-firehose-GatewayRole-NNYFE7CN4OPC
 
 
 ## Sample 2
+completed SAM hello-world tutorial:
+- https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html
+
 https://github.com/wgong/serverless-data-pipeline-sam
 
 ## Ref: AWS Lambda Developer Guide
