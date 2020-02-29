@@ -12,7 +12,7 @@ Business benefits include faster time-to-market speed, productivity gain and cos
 
 DevOps CI/CD Pipeline
 ----------------------
-![alt text](https://github.com/wgong/code2cloud/blob/master/images/Wen_Gong-DevOps-CI-CD.jpg "Code2Cloud Pipeline")
+![alt text](https://github.com/wg2g/code2cloud/blob/master/images/Wen_Gong-DevOps-CI-CD.jpg "Code2Cloud Pipeline")
 
 ## Project 
 
@@ -98,7 +98,7 @@ Docker build and publish
 video walkthrough from git push to docker push (https://youtu.be/rKY6u4Z6AzM)
 
 ```
-login to devopsgong@osboxes:
+login to devopsg2g@osboxes:
 $ cd ~/GitHub/insight-project
 
 $ vi README.md   # change anything
@@ -116,7 +116,7 @@ video walkthrough from git push to service deployed in AWS (https://youtu.be/dxn
 
 ```
 
-login to devopsgong@osboxes:
+login to devopsg2g@osboxes:
 $ cd ~/GitHub/hello-aws-docker
 
 $ vi www/index.php   # change company name
@@ -135,7 +135,7 @@ view docker cloud homepage at http://hello.s8s.cloud/
 video walkthrough (https://youtu.be/qpPLTKGVnkc)
 
 ```
-$ git clone https://github.com/wgong/insight-project.git
+$ git clone https://github.com/wg2g/insight-project.git
 $ cd insight-project
 $ pip3 install -r requirements.txt
 
@@ -164,7 +164,7 @@ view Lambda logs
 
 #### AWS S3
 monitor file uploads
-* https://us-east-1.console.aws.amazon.com/s3/buckets/wengong
+* https://us-east-1.console.aws.amazon.com/s3/buckets/weng2g
 	
 #### AWS DynamoDB
 monitor processed traffic data
@@ -216,7 +216,7 @@ upload a single file
 
 ```
 $ cd test
-$ aws s3 cp sample_Trafficspeed.xml.gz s3://wengong/Traffic/test/Trafficspeed.xml.gz
+$ aws s3 cp sample_Trafficspeed.xml.gz s3://weng2g/Traffic/test/Trafficspeed.xml.gz
 ```
 
 #### Batch test
@@ -247,4 +247,4 @@ $ pytest -q test_lambda_function_xml.py
 
 
 ### About Me
-https://www.linkedin.com/in/wen-g-gong/
+https://www.linkedin.com/in/wen-g-g2g/

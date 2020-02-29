@@ -1,6 +1,6 @@
 
 AWS Lambda Developer Guide 
-- https://github.com/wgong/aws-lambda-developer-guide
+- https://github.com/wg2g/aws-lambda-developer-guide
 
 
 API Gateway, Cognito and Python
