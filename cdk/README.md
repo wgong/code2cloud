@@ -5,6 +5,10 @@ CDK is a higher-level abstraction to describe infrastructure more simply.
 
 Getting Started With the AWS CDK
 - https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
+- [CDK examples in python](https://github.com/aws-samples/aws-cdk-examples#Python)
+
+Python CDK examples 
+- https://github.com/aws-samples/aws-cdk-examples/tree/master/python
 
 CDK Workshop
 - https://cdkworkshop.com/
@@ -119,5 +123,13 @@ arn:aws:cloudformation:us-east-1:57824746:stack/HelloCdkStack/81f752e0-5aa3-11ea
 
 
 ######################################################################
-#Python CDK examples 
-- https://github.com/aws-samples/aws-cdk-examples/tree/master/python
+
+https://aws.amazon.com/blogs/developer/getting-started-with-the-aws-cloud-development-kit-and-python/
+
+$ cd ~/projects/code2cloud/cdk
+$ mkdir my_python_sample
+$ cd my_python_sample
+$ cdk init --language python sample-app
+$ source .env/bin/activate
+$ pip install -r requirements.txt
+$ cdk synth

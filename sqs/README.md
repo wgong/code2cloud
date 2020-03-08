@@ -1,0 +1,1 @@
+https://read.acloud.guru/event-driven-architecture-with-sqs-and-aws-lambda-cf2ebd529ae3
