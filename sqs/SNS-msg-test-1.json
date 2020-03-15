@@ -1,0 +1,23 @@
+{
+    "message": "MaaS SQS data 2020-03-0",
+    "event": {
+        "Records": [
+            {
+                "messageId": "98d9183a-c539-4223-9263-815c9d054b76",
+                "receiptHandle": "AQEBIA5HU2FhZtw9NSNdXrbdX5PKRRbfiODIdAXC4KFClIUsi6v25P31QJn9nhGd3y4WcR86+j6ascqN9jo/6dFfDEVzHLajrIhJPjKnTsjF8XqNH/bQR9H0+s7AMTUOAANeBQ9ZOe0of3d4sb0XwSv+mQ090ot+jDi+uygGnz6O27YN52Yz/MtdMkmV8J9oqOIh1Xx+6mMcjxDldd8liF+awsx0GGmriUKXQsWcJcB+BIB5xVmqNkZME+HixP09AJhFilgT4LZdTvHFXPgegv3HKMMCw0nYIkAmxa2eRj3HIpB1jbNFh/3zCibIHoMUPNkaVcwipY2Q610L2mNiG16pHkABFLI5RSEm2J2KgyoZglk062aT6bLUks+6feqnlkgRuJo2Qc99x+EWHzETM3o6cg==",
+                "body": "{\n  \"Type\" : \"Notification\",\n  \"MessageId\" : \"38326993-e7ee-5036-99b0-3f7b91fbde73\",\n  \"TopicArn\" : \"arn:aws:sns:us-east-1:1234567890:MaasSNSTestTopic\",\n  \"Subject\" : \"Maas SNS test\",\n  \"Message\" : \"Hello AWS SNS test 1\",\n  \"Timestamp\" : \"2020-03-15T18:28:37.731Z\",\n  \"SignatureVersion\" : \"1\",\n  \"Signature\" : \"VuZ0c7hCDZpwaz+JpfqrGzBz8gWFTtHP3UzVRwcQhbvL8IGmW4svflin0esI5F8x2pY5GY0lS5Ma9yJHBvByuHta7LGo58L+lQ/2CSNWpzUg0lcEVTq/mkFkRhibjpUr6V0pflqDl1QfxXl7+b0SmEsv1l0Q+z2OcF1zH4GR0CSaQGbLMrZb8fskF/u+ecrDnYr5qOpxdxmgLo9Xjy2R0EZ6aK2pdoJ0Yo2+/yABgezrixcJtlFjIJ+QYiagBYR9ux+l/DHF/ph8LyleK0kT1GvaZ8wWru4R7dRcrIzb7cyYImkFxfjawtYz/6554MJeg/sXRVyhnKZxqUCCgxZ48Q==\",\n  \"SigningCertURL\" : \"https://sns.us-east-1.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d737128f7b6.pem\",\n  \"UnsubscribeURL\" : \"https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:1234567890:MaasSNSTestTopic:959f9c5e-0b6a-4bc4-89ba-754fa52e4f86\"\n}",
+                "attributes": {
+                    "ApproximateReceiveCount": "1",
+                    "SentTimestamp": "1584296917792",
+                    "SenderId": "AIDAIT2UOQQY3AUEKVGXU",
+                    "ApproximateFirstReceiveTimestamp": "1584296917817"
+                },
+                "messageAttributes": {},
+                "md5OfBody": "c754784a87509b980934d49e575ba16d",
+                "eventSource": "aws:sqs",
+                "eventSourceARN": "arn:aws:sqs:us-east-1:1234567890:MaasSQSLambda",
+                "awsRegion": "us-east-1"
+            }
+        ]
+    }
+}
